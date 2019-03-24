@@ -1,5 +1,5 @@
 <template>
     <div>
-        Home
+        News
     </div>
 </template>
