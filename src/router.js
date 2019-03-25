@@ -11,26 +11,41 @@ export default new Router({
     {
       path: '/',
       name: 'home',
+      meta: {
+        title: '首頁'        
+      },
       component: Home
     },
     {
       path: '/news',
       name: 'news',
+      meta: {
+        title: '最新消息'
+      },
       component: () => import('./views/News.vue')
     },
     {
       path: '/introduction',
       name: 'introduction',
+      meta: {
+        title: '品牌介紹'
+      },
       component: () => import('./views/Introduction.vue')
     },
     {
       path: '/salePage',
       name: 'salePage',
+      meta: {
+        title: '團購專區'
+      },
       component: () => import('./views/SalePage.vue')
     },
     {
       path: '/about',
       name: 'about',
+      meta: {
+        title: '關於我們'
+      },
       // route level code-splitting
       // this generates a separate chunk (about.[hash].js) for this route
       // which is lazy-loaded when the route is visited.

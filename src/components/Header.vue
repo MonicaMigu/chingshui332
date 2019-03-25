@@ -1,7 +1,10 @@
 <template>
-    <div>
-        <div>Header</div>
-        <div>
+    <div class="header">
+        <div class="logo">
+            <div class="logo-img"><router-link to="/"><img src="../assets/images/firedoge.jpeg" alt="" srcset=""></router-link></div>
+            <div class="title">清水332</div>
+        </div>
+        <div class="navbar">
             <ul>
                 <li>
                     <router-link to="/news">最新消息</router-link>

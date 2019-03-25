@@ -18,3 +18,8 @@ css.setAttribute('type', 'text/css')
 css.setAttribute('href', url)
 css.setAttribute('charset', 'utf-8')
 document.head.appendChild(css)
+
+router.beforeEach((to, froe, next) => {
+  if(to.meta.title) document.title = to.meta.title
+  next();
+})
