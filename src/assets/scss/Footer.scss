@@ -1,0 +1,74 @@
+.footer {
+    height: 330px;
+    width: 100vw;
+    background-color: #AAAAAA;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 35px 85px;
+
+    .info {
+        
+        display: flex;
+        flex-direction: column;
+
+        .logo {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .title {
+            font-size: 70px;
+            margin: 25px 80px 0px 20px;
+            color: $black;
+        }
+        
+        .logo-img img {
+            width: 150px;
+            height: 150px;
+        }
+
+        ul {
+            width: 115px;
+            height: 115px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 35px;
+            
+            li {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 50px;
+                height: 50px;
+                border-radius: 50px;
+                background-color: $black;
+            }
+
+            .icon {
+                width: 35px;
+                height: 35px;
+                color: $white;
+            }
+        }
+
+        .address {
+            font-size: 40px;
+            margin-top: 45px;
+            color: $black;
+        }
+    }
+
+    .copyright {
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: flex-end;
+        font-size: 30px;
+        color: $black;
+        text-align: right;
+        line-height: 50px;
+    }
+}

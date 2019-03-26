@@ -2,7 +2,9 @@
     <div class="header">
         <div class="logo">
             <div class="logo-img"><router-link to="/"><img src="../assets/images/firedoge.jpeg" alt="" srcset=""></router-link></div>
-            <div class="title">清水332</div>
+            <div class="title">
+                <p>清水332</p>
+            </div>
         </div>
         <div class="navbar">
             <ul>
