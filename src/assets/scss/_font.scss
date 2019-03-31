@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 @import url('https://fonts.googleapis.com/earlyaccess/notosanstc.css');
 
-html, body, button {
+* {
     font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 300;
+}
+
+.bold {
+    font-weight: 400;
 }
