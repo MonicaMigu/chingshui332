@@ -24,14 +24,6 @@ new Vue({
   render: h => h(App)
 }).$mount('#app')
 
-const url = 'file:///Users/shibasalmon/Desktop/Code/telegramPage/main.css'
-const css = document.createElement('link')
-css.setAttribute('rel', 'stylesheet')
-css.setAttribute('type', 'text/css')
-css.setAttribute('href', url)
-css.setAttribute('charset', 'utf-8')
-document.head.appendChild(css)
-
 router.beforeEach((to, froe, next) => {
   if(to.meta.title) document.title = to.meta.title
   next();
