@@ -1,5 +1,5 @@
 .footer {
-    height: 330px;
+    height: calc(330 * 100vw / 1920);
     width: 100vw;
     background-color: #AAAAAA;
     display: flex;
@@ -11,6 +11,7 @@
         
         display: flex;
         flex-direction: column;
+        position: relative;
 
         .logo {
             display: flex;
@@ -18,57 +19,73 @@
         }
 
         .title {
+            color: $black;
             font-size: 70px;
             margin: 25px 80px 0px 20px;
-            color: $black;
+
+            @media screen and (max-width: 1600px) {
+                font-size: 50px;
+                margin: 25px 50px 0px 20px;
+            }
         }
         
         .logo-img img {
-            width: 150px;
-            height: 150px;
+            width: calc(150 * 100vw / 1920);
+            height: calc(150 * 100vw / 1920);
         }
 
         ul {
-            width: 115px;
-            height: 115px;
             display: flex;
             flex-direction: row;
-            flex-wrap: wrap;
             justify-content: space-between;
-            margin-top: 35px;
+            align-items: flex-end;
+            flex-wrap: wrap;
+            width: calc(115 * 100vw / 1920);
+            height: calc(115 * 100vw / 1920);
+            margin-top: calc((150 - 115) * 100vw / 1920);
             
             li {
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                width: 50px;
-                height: 50px;
-                border-radius: 50px;
                 background-color: $black;
+                width: calc(50 * 100vw / 1920);
+                height: calc(50 * 100vw / 1920);
+                border-radius: calc(50 * 100vw / 1920);
             }
 
             .icon {
-                width: 35px;
-                height: 35px;
+                width: calc(35 * 100vw / 1920);
+                height: calc(35 * 100vw / 1920);
                 color: $white;
             }
         }
 
         .address {
             font-size: 40px;
-            margin-top: 45px;
+            position: absolute;
+            bottom: 0;
             color: $black;
+
+            @media screen and (max-width: 1600px){
+                font-size: 25px;
+            }
         }
     }
 
     .copyright {
         display: flex;
         flex-direction: column;
-        justify-content: end;
+        justify-content: flex-end;
         align-items: flex-end;
-        font-size: 30px;
         color: $black;
         text-align: right;
+        font-size: 30px;
         line-height: 50px;
+
+        @media screen and (max-width: 1600px) {
+            font-size: 20px;
+            line-height: 35px;
+        }
     }
 }
