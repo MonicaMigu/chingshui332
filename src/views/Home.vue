@@ -48,8 +48,14 @@
             <div class="block">
               <img :src="e.img" alt>
               <div>
-                <h2>{{ e.title }}</h2>
-                <p>{{ e.intro }}</p>
+                <h2 class="bold">{{ e.title }}</h2>
+                <p class="bold">{{ e.intro }}</p>
+                <a :href="e.link">
+                  <span class="bold">
+                    了解更多
+                    <font-awesome-icon class="angle" :icon="['fas', 'angle-right']"></font-awesome-icon>
+                  </span>
+                </a>
               </div>
             </div>
           </Slide>
@@ -65,9 +71,12 @@
           <p></p>
         </div>
         <div class="button">
-          <a href="#"><span class="bold">了解更多
-            <font-awesome-icon :icon="['fas', 'angle-right']"></font-awesome-icon>
-            </span></a>
+          <a href="#">
+            <span class="bold">
+              了解更多
+              <font-awesome-icon :icon="['fas', 'angle-right']"></font-awesome-icon>
+            </span>
+          </a>
         </div>
       </div>
       <div class="bar"></div>
@@ -79,9 +88,12 @@
           <p></p>
         </div>
         <div class="button">
-          <a href="#"><span class="bold">了解更多
-            <font-awesome-icon :icon="['fas', 'angle-right']"></font-awesome-icon>
-            </span></a>
+          <a href="#">
+            <span class="bold">
+              了解更多
+              <font-awesome-icon :icon="['fas', 'angle-right']"></font-awesome-icon>
+            </span>
+          </a>
         </div>
       </div>
     </div>
@@ -93,7 +105,7 @@
   </div>
 </template>
 
-<style lang="scss" scoped>
+<style lang="scss">
 @import "../assets/scss/main.scss";
 .home {
   .spotlight-shop {
@@ -206,28 +218,70 @@
       display: flex;
       flex-direction: row;
 
-      .slider-container {
+      .VueCarousel.slider-container {
         outline: none;
-        max-width: 84vw;
-        display: flex;
-        flex-direction: column;
+        width: 91vw;
 
         .VueCarousel-inner {
-          .VueCarousel-slide {
-            width: calc(0.3 * 84vw) !important;
-          }
-
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
           .block {
+            position: relative;
             background-color: $white;
-            width: calc(0.3 * 84vw);
+            width: 28vw;
             height: 65vh;
             border-radius: 30px;
+            margin: 0 calc(7vw / 6);
 
             img {
               width: 100%;
               height: 50%;
               border-radius: 30px 30px 0px 0px;
             }
+
+            div {
+              display: flex;
+              flex-direction: column;
+              padding: 20px;
+
+              h2 {
+                font-size: 25px;
+                font-weight: 500;
+                @media screen and (max-width: 1440px) {
+                  font-size: 20px;
+                }
+              }
+
+              p {
+                font-size: 17px;
+                line-height: 1.3;
+                letter-spacing: 1.5px;
+                margin: 12px 0px;
+                @media screen and (max-width: 1440px) {
+                  font-size: 15px;
+                }
+              }
+
+              a {
+                display: flex;
+                position: absolute;
+                right: 25px;
+                bottom: 15px;
+                color: #363660;
+                font-size: 30px;
+                @media screen and (max-width: 1440px) {
+                  font-size: 25px;
+                }
+              }
+            }
+          }
+        }
+
+        .VueCarousel-navigation {
+          &-button {
+            color: #363660;
+            font-size: 80px;
           }
         }
       }
@@ -275,7 +329,7 @@
           width: calc(430 * 100vw / 1920);
           height: calc(100 * 100vw / 1920);
           border-radius: 20px;
-          background-color: #AAAAAA;
+          background-color: #aaaaaa;
           color: #363660;
 
           span {
@@ -305,7 +359,7 @@
 
 <script>
 import { Carousel, Slide } from "vue-carousel";
-import { mapGetters, mapActions } from "vuex";
+import { mapGetters } from "vuex";
 
 export default {
   components: {

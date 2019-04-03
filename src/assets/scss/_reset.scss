@@ -35,5 +35,12 @@ a {
 	text-decoration: none;
 	&:hover {
 		text-decoration: none;
+		color: inherit;
+	}
+
+	&:visited {
+
+		text-decoration: none;
+		color: inherit;
 	}
 }
