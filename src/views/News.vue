@@ -29,7 +29,7 @@ export default {
 <style lang="scss" scoped>
 @import "../assets/scss/main.scss";
 .news {
-  width: 100vw;
+  width: 100%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -38,15 +38,14 @@ export default {
   .block {
     position: relative;
     background-color: $white;
-    width: 28vw;
+    width: 28%;
     height: 66vh;
     border: #707070 1px solid;
     border-radius: 30px;
     box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.2);
-    margin: calc(67.5 * 100vh / 1080) calc(16vw / 6);
+    margin: calc(67.5 * 100vh / 1080) calc(16% / 6);
     img {
       width: 100%;
-      height: 50%;
       border-bottom: #707070 1px solid;
       border-radius: 30px 30px 0px 0px;
     }
