@@ -4,6 +4,7 @@
       <img class="background-img" src="../assets/images/spotlight-img/shop/img1.jpg" alt>
       <img class="background-img" src="../assets/images/spotlight-img/shop/img2.jpg" alt>
       <img class="background-img" src="../assets/images/spotlight-img/shop/img3.jpg" alt>
+      <img class="background-img" src="../assets/images/spotlight-img/shop/chingshui332.jpg" alt>
       <div class="border-intro">
         <img src="../assets/images/borderIntro.png" alt>
         <div class="shop-info">
@@ -68,7 +69,7 @@
           <h1 class="bold">場地租借</h1>
         </div>
         <div class="content">
-          <p></p>
+          <p>位於三峽河岸邊的一間小店，鄰近三峽祖師廟、三峽老街與李梅樹紀念管等文化景點，適合用於小型聚會、文化導覽點、社群活動、工作坊等用途，場地備有茶水、插座與網路。</p>
         </div>
         <div class="button">
           <a href="#">
@@ -85,7 +86,7 @@
           <h1 class="bold">在地品牌</h1>
         </div>
         <div class="content">
-          <p></p>
+          <p>三峽不是只有金牛角而已，還有許多在地微光，在地方上閃耀著，他們或許沒有什麼光鮮亮麗的包裝，但是卻存在著最踏實的內涵，我們嘗試去尋找這些商家，將他們的故事與精神傳達給您。</p>
         </div>
         <div class="button">
           <a href="#">
