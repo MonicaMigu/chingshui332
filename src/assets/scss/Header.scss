@@ -1,5 +1,5 @@
 .header {
-    width: 100vw;
+    width: 100%;
     height: $header-height;
     box-shadow: 0px -10px 20px rgba(0, 0, 0, 16%);
     display: flex;
@@ -7,7 +7,7 @@
     padding: 0px 50px;
 
     & .logo {
-        width: 20vw;
+        width: 20%;
         height: $header-height;
         display: flex;
         flex-direction: row;
@@ -21,8 +21,8 @@
 
     & .title {
         color: #707070;
-        font-size: 2rem;
-        padding: 0px 10px;
+        font-size: 2.2vw;
+        padding: 0 0.675vw;
         white-space: nowrap;
     }
 
@@ -39,21 +39,21 @@
         }
 
         & li {
-            width: calc(200 * 100vw / 1920);
-            height: calc(60 * 100vw / 1920);
-            padding: 10px;
+            // width: 18.7vmin;
+            // height: 5.5vmin;
+            // padding: 1.1vmin;
+            width: 10.5vw;
+            height: 3.1vw;
+            padding: 0.6vw;
             display: flex;
             justify-content: center;
             align-items: flex-end;
             background-color: #707070;
-            border-radius: 30px 30px 0px 0px;
+            border-radius: 1.85vw 1.85vw 0px 0px;
 
             & a {
                 color: $white;
-                font-size: 35px;
-                @media screen and (max-width: 1600px) {
-                    font-size: 25px;
-                }
+                font-size: 1.7vw;
 
                 &:link {
                     text-decoration: none;

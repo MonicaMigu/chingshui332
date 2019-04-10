@@ -109,16 +109,16 @@
 @import "../assets/scss/main.scss";
 .home {
   .spotlight-shop {
-    width: 100vw;
-    height: calc((1080 - 95) * 100vh / 1080);
+    width: 100%;
+    height: calc(985 * 100vh / 1080);
     background-color: $white;
     display: flex;
     align-items: center;
 
     .border-intro {
       position: absolute;
-      height: calc(((1080 - 95) * 100vw / 1920) / 2);
-      width: calc(((1080 - 95) * 100vw / 1920) / 2);
+      height: 46vmin;
+      width: 46vmin;
       left: 50px;
 
       img {
@@ -144,11 +144,7 @@
           text-align: center;
           font-weight: 500;
           margin: calc(50 * 100vw / 1920) 0px;
-          font-size: 35px;
-
-          @media screen and (max-width: 1600px) {
-            font-size: 24px;
-          }
+          font-size: 3vmin;
         }
 
         .shop-go {
@@ -157,30 +153,18 @@
           }
 
           h2 {
-            font-size: 33px;
             margin-bottom: calc(10 * 100vw / 1920);
-
-            @media screen and (max-width: 1600px) {
-              font-size: 23px;
-            }
+            font-size: 2.5vmin;
           }
 
           p {
-            font-size: 25px;
-
-            @media screen and (max-width: 1600px) {
-              font-size: 18px;
-            }
+            font-size: 2.2vmin
           }
         }
 
         .shop-status {
           text-align: center;
-          font-size: 35px;
-
-          @media screen and (max-width: 1600px) {
-            font-size: 30px;
-          }
+          font-size: 3vmin;
 
           span {
             color: rgb(255, 205, 188);
@@ -191,7 +175,7 @@
   }
 
   .news {
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -205,11 +189,7 @@
       align-items: center;
 
       h1 {
-        font-size: 80px;
-
-        @media screen and (max-width: 1440px) {
-          font-size: 60px;
-        }
+        font-size: 7.4vmin;
       }
     }
 
@@ -236,7 +216,6 @@
 
             img {
               width: 100%;
-              height: 50%;
               border-radius: 30px 30px 0px 0px;
             }
 
@@ -289,7 +268,7 @@
   }
 
   .services {
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     display: flex;
     flex-direction: row;
@@ -351,7 +330,7 @@
   }
 
   .spotlight-other-stores {
-    width: 100vw;
+    width: 100%;
     height: 100vh;
   }
 }
